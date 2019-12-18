@@ -2,7 +2,7 @@ package com.diasoft.test.operations;
 
 public class Operations {
 
-    public static int calculateMaxAndMin(int a, int b) {
+    public int calculateMaxAndMin(int a, int b) {
         if (a >= b) {
             return a;
         } else {
@@ -10,7 +10,7 @@ public class Operations {
         }
     }
 
-    public static void showRangeBetweenTwoNumbers(int a, int b) {
+    public void showRangeBetweenTwoNumbers(int a, int b) {
         Integer max = calculateMaxAndMin(a, b);
         Integer A = a;
         Integer min;

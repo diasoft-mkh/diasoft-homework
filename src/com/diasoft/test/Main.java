@@ -7,6 +7,8 @@ public class Main {
     public static void main(String[] args) {
 
         try {
+            Operations oper = new Operations();
+
             int a = Integer.valueOf(args[0]);
             int b = Integer.valueOf(args[1]);
 
@@ -14,9 +16,9 @@ public class Main {
             System.out.println("Число 1: " + a);
             System.out.println("Число 2: " + b);
             System.out.println();
-            System.out.println("Максимальное число: " + Operations.calculateMaxAndMin(a, b));
+            System.out.println("Максимальное число: " + oper.calculateMaxAndMin(a, b));
             System.out.println();
-            Operations.showRangeBetweenTwoNumbers(a, b);
+            oper.showRangeBetweenTwoNumbers(a, b);
 
         } catch (NumberFormatException ex) {
             System.out.println("Одно или оба числа введены с ошибкой!");
