@@ -7,8 +7,8 @@ public class Main {
     public static void main(String[] args) {
 
         try {
-            int a = Integer.parseInt(args[0]);
-            int b = Integer.parseInt(args[1]);
+            int a = Integer.valueOf(args[0]);
+            int b = Integer.valueOf(args[1]);
 
             System.out.println("Введённые числа:");
             System.out.println("Число 1: " + a);

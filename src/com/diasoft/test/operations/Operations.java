@@ -11,10 +11,16 @@ public class Operations {
     }
 
     public static void showRangeBetweenTwoNumbers(int a, int b) {
-        int max = calculateMaxAndMin(a, b);
-        int min = max == a ? b : a;
-        if (min == max) {
-            System.out.println("Диапазон чисел пуст, так как введённые числа равны.");
+        Integer max = calculateMaxAndMin(a, b);
+        Integer A = a;
+        Integer min;
+        if (max.equals(A)) {
+            min = b;
+        } else {
+            min = a;
+        }
+        if (min.equals(max)) {
+            System.out.println("Диапазон содержит только 1 число — " + min + ", так как введённые числа равны");
         } else {
             System.out.println("Диапазон чисел от " + min + " до " + max + " с шагом 1:");
             for (; min <= max; min++) {
