@@ -1,0 +1,15 @@
+.idea
+*.ftprj
+*.jsproj
+.vs
+.vscode/
+*.iml
+target/
+/target/*
+/.metadata
+*.project
+*.classpath
+.settings
+.classpath
+configcommon-dir.txt
+out/
